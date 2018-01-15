@@ -63,7 +63,6 @@ public class WebSocketReader extends SingleProcessor
 		return false;
 	}
 
-	@Override
 	public Processor duplicate() 
 	{
 		return new WebSocketReader(m_serverUri);
@@ -114,5 +113,11 @@ public class WebSocketReader extends SingleProcessor
 		{
 			// Do nothing
 		}
+	}
+
+	@Override
+	public Processor clone() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
